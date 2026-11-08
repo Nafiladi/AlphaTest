@@ -1,0 +1,6 @@
+{
+  "name": "AstraMind Orbital Behavioral & Biometric Telemetry",
+  "description": "Astronaut psychological and behavioral mental health diagnostic platform integrating real-time biometric feedback with render-synchronized Psychomotor Vigilance (PVT), Ipsative Forced-Choice Inventory, and Spaceflight Emotional Stroop assessments.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

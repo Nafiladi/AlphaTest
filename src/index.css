@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-sans: 'Public Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+  }
+
+  html[data-font-scale="normal"] {
+    font-size: 16px;
+  }
+
+  html[data-font-scale="large"] {
+    font-size: 18.5px;
+  }
+
+  html[data-font-scale="xlarge"] {
+    font-size: 21px;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+
+  .font-mono {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* High-contrast accessibility overrides for low-luminance or glare spacecraft environments */
+html[data-contrast="high"] body {
+  background-color: #FFFFFF !important;
+  color: #000000 !important;
+}
+
+html[data-contrast="high"] .hc-surface {
+  background-color: #FFFFFF !important;
+  border-color: #000000 !important;
+  border-width: 2px !important;
+  color: #000000 !important;
+}
+
+html[data-contrast="high"] .hc-muted {
+  color: #111827 !important;
+  font-weight: 600 !important;
+}
+
+html[data-contrast="high"] .hc-primary-btn {
+  background-color: #004D40 !important;
+  color: #FFFFFF !important;
+  border: 2px solid #000000 !important;
+  font-weight: 700 !important;
+}
+
+html[data-contrast="high"] *:focus-visible {
+  outline: 3px solid #000000 !important;
+  outline-offset: 2px !important;
+}
